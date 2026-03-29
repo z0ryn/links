@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>links</title>
-    </head>
-    <body>
-        <h1>Links</h1>
-        <br>
-        <br>
+<head>
+    <title>Links</title>
+    <style>
+        div {
+             border: 5px solid #212121;
+            border-radius: 5px;
+            padding: 10px;           /* inside padding */
+            display: inline-block;    /* makes them sit in a row */
+            vertical-align: middle;   /* aligns them on the same baseline */
+            height: 200px;            /* box height */
+            width: 30%;               /* roughly 3 boxes per row */
+            font-size: 60px;          /* big text */
+            font-weight: bold;        /* bold text */
+            text-align: center;       /* center text horizontally */
+            box-sizing: border-box;   /* include padding and border in width */
+            margin-right: 1%;          /* small space between boxes */
+        }
+
+        .links {
+            margin: 0;               /* remove default <p> margins */
+            font-weight: bold;       /* make text bold */
+        }
+
+        a {
+            text-decoration: none;   /* optional styling for links */
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+
+    <div>
         <p class="links">GitHub Main: <a href="https://github.com/z0ryn" target="_blank">z0ryn</a></p>
+    </div>
+    <div>
         <p class="links">GitHub Alt: <a href="https://github.com/coding98html" target="_blank">coding98html</a></p>
-        <p class="links">Mastodon Account (ohai.social): <a href="https://ohai.social/@z0ryn">z0ryn</a></p>
-    </body>
+    </div>
+    
+</body>
 </html>
